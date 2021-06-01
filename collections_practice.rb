@@ -35,6 +35,11 @@ def kesha_maker(array)
   new_array
 end
 
+def kesha_maker(array)
+  array.each do |item|
+    item[2] = "$"
+  end
+end
 
 def find_a(array)
   array.select { |element| element.start_with?("a") }
