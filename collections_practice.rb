@@ -30,16 +30,11 @@ end
 def kesha_maker(array)
   new_array = []
   array.each do |element|
-    new_array << element.gsub(element[2], "$")
+  element.gsub(element[2], "$")
   end
   new_array
 end
 
-def kesha_maker(array)
-  array.each do |item|
-    item[2] = "$"
-  end
-end
 
 def find_a(array)
   array.select { |element| element.start_with?("a") }
